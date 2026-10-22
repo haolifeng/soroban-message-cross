@@ -1,0 +1,1362 @@
+{
+  "generators": {
+    "address": 2,
+    "nonce": 0
+  },
+  "auth": [
+    [],
+    [],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "add_limit",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 1000
+                  }
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "ledger": {
+    "protocol_version": 21,
+    "sequence_number": 0,
+    "timestamp": 0,
+    "network_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "base_reserve": 0,
+    "min_persistent_entry_ttl": 4096,
+    "min_temp_entry_ttl": 16,
+    "max_entry_ttl": 6312000,
+    "ledger_entries": [
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": "ledger_key_contract_instance",
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": "ledger_key_contract_instance",
+                "durability": "persistent",
+                "val": {
+                  "contract_instance": {
+                    "executable": {
+                      "wasm": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                    },
+                    "storage": [
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "Signer"
+                            },
+                            {
+                              "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                            }
+                          ]
+                        },
+                        "val": "void"
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "Signer"
+                            },
+                            {
+                              "bytes": "f535c38ebfd7e48baf2a3fd91d5775383ba43c470a458601e0562965c5dd3d0e"
+                            }
+                          ]
+                        },
+                        "val": "void"
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SignerCnt"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 2
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SpendLimit"
+                            },
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "i128": {
+                            "hi": 0,
+                            "lo": 1000
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 801925984706572462
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 801925984706572462
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          6311999
+        ]
+      ],
+      [
+        {
+          "contract_code": {
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_code": {
+                "ext": "v0",
+                "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "code": ""
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ]
+    ]
+  },
+  "events": [
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "init"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                },
+                {
+                  "bytes": "f535c38ebfd7e48baf2a3fd91d5775383ba43c470a458601e0562965c5dd3d0e"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "init"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                },
+                {
+                  "vec": [
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vec": [
+                    {
+                      "vec": [
+                        {
+                          "symbol": "Contract"
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "args"
+                              },
+                              "val": {
+                                "vec": [
+                                  "void",
+                                  "void",
+                                  {
+                                    "i128": {
+                                      "hi": 0,
+                                      "lo": 1000
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "contract"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "fn_name"
+                              },
+                              "val": {
+                                "symbol": "transfer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "error": {
+                "contract": 1
+              }
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "string": "escalating Ok(ScErrorType::Contract) frame-exit to Err"
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "string": "check auth invocation for a custom account contract failed"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+                },
+                {
+                  "vec": [
+                    {
+                      "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                    },
+                    {
+                      "vec": [
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "public_key"
+                              },
+                              "val": {
+                                "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "signature"
+                              },
+                              "val": {
+                                "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "vec": [
+                        {
+                          "vec": [
+                            {
+                              "symbol": "Contract"
+                            },
+                            {
+                              "map": [
+                                {
+                                  "key": {
+                                    "symbol": "args"
+                                  },
+                                  "val": {
+                                    "vec": [
+                                      "void",
+                                      "void",
+                                      {
+                                        "i128": {
+                                          "hi": 0,
+                                          "lo": 1000
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "contract"
+                                  },
+                                  "val": {
+                                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "fn_name"
+                                  },
+                                  "val": {
+                                    "symbol": "transfer"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "add_limit"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "i128": {
+                    "hi": 0,
+                    "lo": 1000
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "add_limit"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                },
+                {
+                  "vec": [
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vec": [
+                    {
+                      "vec": [
+                        {
+                          "symbol": "Contract"
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "args"
+                              },
+                              "val": {
+                                "vec": [
+                                  "void",
+                                  "void",
+                                  {
+                                    "i128": {
+                                      "hi": 0,
+                                      "lo": 1001
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "contract"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "fn_name"
+                              },
+                              "val": {
+                                "symbol": "transfer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "error": {
+                "contract": 1
+              }
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "string": "escalating Ok(ScErrorType::Contract) frame-exit to Err"
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "string": "check auth invocation for a custom account contract failed"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+                },
+                {
+                  "vec": [
+                    {
+                      "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                    },
+                    {
+                      "vec": [
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "public_key"
+                              },
+                              "val": {
+                                "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "signature"
+                              },
+                              "val": {
+                                "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "vec": [
+                        {
+                          "vec": [
+                            {
+                              "symbol": "Contract"
+                            },
+                            {
+                              "map": [
+                                {
+                                  "key": {
+                                    "symbol": "args"
+                                  },
+                                  "val": {
+                                    "vec": [
+                                      "void",
+                                      "void",
+                                      {
+                                        "i128": {
+                                          "hi": 0,
+                                          "lo": 1001
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "contract"
+                                  },
+                                  "val": {
+                                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "fn_name"
+                                  },
+                                  "val": {
+                                    "symbol": "transfer"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                },
+                {
+                  "vec": [
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vec": [
+                    {
+                      "vec": [
+                        {
+                          "symbol": "Contract"
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "args"
+                              },
+                              "val": {
+                                "vec": [
+                                  "void",
+                                  "void",
+                                  {
+                                    "i128": {
+                                      "hi": 0,
+                                      "lo": 1001
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "contract"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "fn_name"
+                              },
+                              "val": {
+                                "symbol": "approve"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "error": {
+                "contract": 1
+              }
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "string": "escalating Ok(ScErrorType::Contract) frame-exit to Err"
+            }
+          }
+        }
+      },
+      "failed_call": true
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "error"
+              },
+              {
+                "error": {
+                  "contract": 1
+                }
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "string": "check auth invocation for a custom account contract failed"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+                },
+                {
+                  "vec": [
+                    {
+                      "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                    },
+                    {
+                      "vec": [
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "public_key"
+                              },
+                              "val": {
+                                "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "signature"
+                              },
+                              "val": {
+                                "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "vec": [
+                        {
+                          "vec": [
+                            {
+                              "symbol": "Contract"
+                            },
+                            {
+                              "map": [
+                                {
+                                  "key": {
+                                    "symbol": "args"
+                                  },
+                                  "val": {
+                                    "vec": [
+                                      "void",
+                                      "void",
+                                      {
+                                        "i128": {
+                                          "hi": 0,
+                                          "lo": 1001
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "contract"
+                                  },
+                                  "val": {
+                                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                                  }
+                                },
+                                {
+                                  "key": {
+                                    "symbol": "fn_name"
+                                  },
+                                  "val": {
+                                    "symbol": "approve"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                },
+                {
+                  "vec": [
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vec": [
+                    {
+                      "vec": [
+                        {
+                          "symbol": "Contract"
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "args"
+                              },
+                              "val": {
+                                "vec": [
+                                  "void",
+                                  "void",
+                                  {
+                                    "i128": {
+                                      "hi": 0,
+                                      "lo": 1000
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "contract"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "fn_name"
+                              },
+                              "val": {
+                                "symbol": "approve"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c357227887f7b59f30b97f1fcb9850ad72ac901224ae8f9009a3415a412655a1"
+                },
+                {
+                  "vec": [
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "dee49aca9259703282fc8b3d2853e82b5c911560a9113c1051c824364074a8c9"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "78ff7732ac298f6ec8456c55d8637abb9257822b128e6c599035fab0eed8955031190c27ee5db3d0571ca73e0daa9c707616490308b2411533db15aeee33310a"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "map": [
+                        {
+                          "key": {
+                            "symbol": "public_key"
+                          },
+                          "val": {
+                            "bytes": "f535c38ebfd7e48baf2a3fd91d5775383ba43c470a458601e0562965c5dd3d0e"
+                          }
+                        },
+                        {
+                          "key": {
+                            "symbol": "signature"
+                          },
+                          "val": {
+                            "bytes": "de0591cd59946a55aa97969286153715c544a29f9abd390aa254bbc3ed6255d7aa3fcbaed9d6ec31820774bf57211e7d68800d05cd61448254578517f5b1090f"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "vec": [
+                    {
+                      "vec": [
+                        {
+                          "symbol": "Contract"
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "args"
+                              },
+                              "val": {
+                                "vec": [
+                                  "void",
+                                  "void",
+                                  {
+                                    "i128": {
+                                      "hi": 0,
+                                      "lo": 10000
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "contract"
+                              },
+                              "val": {
+                                "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "fn_name"
+                              },
+                              "val": {
+                                "symbol": "transfer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "__check_auth"
+              }
+            ],
+            "data": "void"
+          }
+        }
+      },
+      "failed_call": false
+    }
+  ]
+}

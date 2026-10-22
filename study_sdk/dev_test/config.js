@@ -1,0 +1,5 @@
+let config = {
+    eventSc:"CBR62XX2FA73UG7S5VBP6CV44D5RADDNYXJGDRIM7XQHATOBUFZVW6IS"
+}
+
+module.exports = config;

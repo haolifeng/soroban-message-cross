@@ -1,0 +1,23 @@
+use soroban_sdk::{Address, Bytes, BytesN, Env, U256};
+
+
+use crate::storage_types::{DataKey, MessageData};
+
+pub fn has_order_key(e: &Env, order_key:BytesN<32>) -> bool {
+    let key = DataKey::OrderKey(order_key);
+    e.storage().instance().has(&key)
+}
+
+pub fn read_order_key(e: &Env, order_key: BytesN<32>) -> MessageData {
+    let key = DataKey::OrderKey(order_key);
+    e.storage().instance().get(&key).unwrap()
+}
+
+pub fn write_order_key(e: &Env, order_key:BytesN<32>, message_data:MessageData) {
+    let key = DataKey::OrderKey(order_key);
+    e.storage().instance().set(&key, &message_data);
+}
+pub fn remove_order_key(e: &Env, order_key:BytesN<32>) {
+    let key = DataKey::OrderKey(order_key);
+    e.storage().instance().remove(&key)
+}
